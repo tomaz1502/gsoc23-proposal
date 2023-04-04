@@ -2,35 +2,18 @@
 
 \documentclass[a4paper,12pt]{article}
 
-% TeX gyre pagella fonts
-\usepackage{tgpagella}
-
-% The microtype package for better spacings
 \usepackage{microtype}
-
-% colors
 \usepackage[usenames, dvipsnames]{xcolor}
-
-% For urls
 \usepackage[colorlinks=true]{hyperref}
-
 \hypersetup{
   citecolor=magenta,
   linkcolor=Mahogany
 }
-
-% For pretty source-code listings
 \usepackage{minted}
 \setminted[python]{
   autogobble=true
 }
-
-% Code-inlining for python
 \newcommand{\pyline}[1]{\mintinline{python}|#1|}
-
-% PR and issues
-\newcommand{\pull}[1]{\href{https://github.com/sympy/sympy/pull/#1}{#1}}
-\newcommand{\issue}[1]{\href{https://github.com/sympy/sympy/issue/#1}{#1}}
 
 % Title
 \title{Integrating dReal into JavaSMT}
